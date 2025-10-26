@@ -1,6 +1,0 @@
-## esperar tiempo de lanzamiento del paquete antes de instalar
-minumumReleaseAge: 4320 # 72 horas
-
-## Especificar sobrecarga, ideal para paquetes de confianza
-minimumReleaseAgeExclude:
-  -
