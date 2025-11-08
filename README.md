@@ -68,4 +68,4 @@ Deploy the contract:
 Utiliza un entorno de desarrollo como Remix o Hardhat para desplegar el contrato en una red Ethereum.
 
 ## Licencia
-Este proyecto está bajo la licencia UNLICENSED.
+Este proyecto está bajo la licencia MIT.
