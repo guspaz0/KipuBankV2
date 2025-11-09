@@ -22,3 +22,14 @@
 /.pnpm-store
 
 /.vscode
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+/out
+
+# Ignoring .env file for security reasons
+!/.env
+.env

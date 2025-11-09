@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
-import {Test, console} from "forge-std/Test.sol";
+import "forge-std/Test.sol";
 import {KipuBankV2} from "../contracts/KipuBankV2.sol";
 
 import {MockERC20} from "./mocks/MockERC20.sol";
 
 ///@notice Mock Chainlink
-import {MockV3Aggregator} from "@chainlink/contracts/src/v0.8/shared/mocks/MockV3Aggregator.sol";
+import {MockV3Aggregator} from "@chainlink-local/src/data-feeds/MockV3Aggregator.sol";
 
 
 contract KipuBankV2Test is Test {
