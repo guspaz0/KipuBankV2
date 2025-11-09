@@ -1,0 +1,26 @@
+name: Test contract foundry
+
+on:
+  push:
+    branches:
+      - develop-foundry
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Foundry
+        run: |
+          curl -L https://foundry.paradigm.xyz | bash
+          foundryup
+
+      - name: Install dependencies
+        run: forge install
+
+      - name: Run tests
+        run: forge test
