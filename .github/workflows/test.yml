@@ -13,17 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Download library
-        run: |
-          curl -L https://foundry.paradigm.xyz | bash
-          
-      - name: update bash Path
-        run: source /home/runner/.bashrc
+      - name: Install Foundry Toolchain
+        uses: foundry-rs/foundry-toolchain@v1
 
-      - name: run foundry
-        run: foundryup
-
-      - name: Install dependencies
+      - name: Install Forge dependencies
         run: forge install
 
       - name: Build contracts
